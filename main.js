@@ -19,7 +19,7 @@ const products = [
       "https://img.abercrombie.com/is/image/anf/KIC_123-5264-00589-303_prod1?policy=product-medium",
 
     ],
-    video: "https://youtube.com/shorts/aczQVyKEFKQ?si=fXN2tajVJD1EpqbD",
+    video: "graphic_tee.mp4",
     details: {
       fabric: "100% Premium Cotton",
       care: "Machine wash cold, tumble dry low.",
