@@ -1,27 +1,3 @@
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.from(".hero-title", { y: 80, opacity: 0, duration: 1, ease: "power3.out" });
-gsap.from(".hero-subtitle", { y: 40, opacity: 0, duration: 1, delay: 0.2 });
-gsap.from(".btn-primary", { y: 20, opacity: 0, duration: 1, delay: 0.4 });
-
-gsap.from(".product-card", {
-  y: 40,
-  opacity: 0,
-  stagger: 0.08,
-  duration: 0.6,
-  scrollTrigger: {
-    trigger: ".products-grid",
-    start: "top 80%"
-  }
-});
-
-gsap.from(".modal-content", {
-  scale: 0.85,
-  opacity: 0,
-  duration: 0.25,
-  ease: "power2.out"
-});
-
 const products = [
   {
     id: 1,
