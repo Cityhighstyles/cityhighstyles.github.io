@@ -13,7 +13,7 @@ const products = [
       "https://images-cdn.ubuy.co.in/6770a16b5663963d1a001cd5-into-the-am-vintage-graphic-tees-for-men.jpg",
       "https://www.underratedclub.com/cdn/shop/files/23-2175.jpg?v=1748340050",
       "https://www.scramblertales.com/wp-content/uploads/2024/11/3312365778353151072_v2_2048_custom.jpeg",
-      "https://www.joom.com/en/products/5d88b92e8b2c370101dcd481?srsltid=AfmBOoqV0XiXtDQJ3oxTCM2AgBVVP2bwmIRe7w7Fx4PRqv41w2ixtbkt",
+      "https://img.joomcdn.net/5d132d06ee68c2b27dcfdcf02a35c9d795f80fa5_original.jpeg",
       "https://i5.walmartimages.com/seo/Mens-Funny-T-Shirts-Born-In-The-1900s-Sarcastic-Graphic-Tee-For-Men-Graphic-Tees_ed2e65fa-115c-4128-b72c-cc01d214fbe3.d4d04065b07ada4009a3bc80966e1e1f.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
       "https://www.underratedclub.com/cdn/shop/files/12-1864_05d2cccd-349c-404e-af85-5ba3baa2875a.jpg?v=1742459842",
       "https://img.abercrombie.com/is/image/anf/KIC_123-5264-00589-303_prod1?policy=product-medium",
