@@ -257,7 +257,6 @@ const products = [
       "public/chinos/5.jpg",
       "public/chinos/6.jpg",
       "public/chinos/7.jpg",
-      "public/chinos/8.jpg",
     ],
     video: "public/chinos/vid.mp4",
     details: {
