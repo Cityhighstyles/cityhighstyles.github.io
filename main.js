@@ -306,9 +306,6 @@ function renderProducts(filter = 'all') {
       <div class="product-info">
         <h3 class="product-name">${product.name}</h3>
         <p class="product-price">$${product.price}</p>
-        <button class="btn-whatsapp-product quick-view-btn" data-product-id="${product.id}">
-          Quick View
-        </button>
       </div>
     </div>
   `).join('');
@@ -431,10 +428,9 @@ function setupModalInteractions(productId) {
 }
 
 function setupProductInteractions() {
-  document.querySelectorAll('.quick-view-btn').forEach(btn => {
-    btn.addEventListener('click', function (e) {
-      e.preventDefault();
-      const productId = parseInt(this.dataset.productId);
+  document.querySelectorAll('.product-card').forEach(card => {
+    card.addEventListener('click', function () {
+      const productId = parseInt(this.dataset.id);
       openQuickViewModal(productId);
     });
   });
@@ -453,9 +449,31 @@ function setupFilters() {
   });
 }
 
+function startImageTransitions() {
+  const productCards = document.querySelectorAll('.product-card');
+
+  productCards.forEach(card => {
+    const productId = parseInt(card.dataset.id);
+    const product = products.find(p => p.id === productId);
+    const productImage = card.querySelector('.product-image');
+
+    if (product && product.images.length > 1) {
+      setInterval(() => {
+        const randomIndex = Math.floor(Math.random() * product.images.length);
+        productImage.style.opacity = 0;
+        setTimeout(() => {
+          productImage.src = product.images[randomIndex];
+          productImage.style.opacity = 1;
+        }, 500);
+      }, 3000);
+    }
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   renderProducts();
   setupFilters();
+  startImageTransitions();
 
   const modal = document.getElementById('quickViewModal');
   const closeBtn = document.querySelector('.modal-close');
