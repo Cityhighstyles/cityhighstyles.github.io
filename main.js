@@ -288,6 +288,30 @@ const products = [
     },
     fit: "Comfort Fit",
   },
+
+  {    id: 13,
+    name: "Cap",
+    price: 80,
+    category: "more",
+    sizes: ["S", "M", "L", "XL"],
+    colors: ["Black", "White", "Navy"],
+    images: [
+      "public/cap/1.jpg",
+      "public/cap/2.jpg",
+      "public/cap/3.jpg",
+      "public/cap/4.jpg",
+      "public/cap/5.jpg",
+      "public/cap/6.jpg",
+      "public/cap/7.jpg",
+      "public/cap/8.jpg",
+    ],
+    video: "public/cap/vid.mp4",
+    details: {
+      fabric: "100% Cotton",
+      care: "Machine wash cold, tumble dry low.",
+    },
+    fit: "Regular Fit",
+  },
 ];
 
 let currentFilter = 'all';
