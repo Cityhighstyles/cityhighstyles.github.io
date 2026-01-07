@@ -319,7 +319,7 @@ function updateWhatsAppLink(productId) {
     const color = options.color || 'Not selected';
     const pageUrl = window.location.href;
     const message = `Hello! I'm interested in the ${product.name} for $${product.price} in size ${size} and color ${color}. Please let me know if it's available. Thank you!`;
-    const whatsappUrl = `https://wa.me/2347046625465?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/+2347046625465?text=${encodeURIComponent(message)}`;
     document.getElementById('modalWhatsAppBtn').href = whatsappUrl;
 }
 
@@ -434,7 +434,7 @@ function setupModalInteractions(productId) {
 
     const message = `Hi! I'm interested in:\n\nProduct: ${product.name}\nPrice: $${product.price}\nSize: ${size}\nColor: ${color}\n\nFrom: ${pageUrl}`;
 
-    const whatsappUrl = `https://wa.me/+234706625465?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/+2347046625465?text=${encodeURIComponent(message)}`;
     this.href = whatsappUrl;
   };
 }
