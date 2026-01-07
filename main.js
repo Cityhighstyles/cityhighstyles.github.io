@@ -133,12 +133,12 @@ const products = [
     sizes: ["S", "M", "L", "XL", "XXL"],
     colors: ["Black", "White", "Grey"],
     images: [
-    "public/singlet/1.jpg",
-    "public/singlet/2.jpg",
-    "public/singlet/3.jpg",
-    "public/singlet/4.jpg",
-    "public/singlet/5.jpg",
-    "public/singlet/6.jpg",
+      "public/singlet/1.jpg",
+      "public/singlet/2.jpg",
+      "public/singlet/3.jpg",
+      "public/singlet/4.jpg",
+      "public/singlet/5.jpg",
+      "public/singlet/6.jpg",
     ],
     video: "public/singlet/vid.mp4",
     details: {
@@ -196,7 +196,7 @@ const products = [
   },
   {
     id: 9,
-    name: "Up and Down wears",
+    name: "Up and Down Short",
     price: 99,
     category: "wears",
     sizes: ["S", "M", "L", "XL", "XXL"],
@@ -205,7 +205,7 @@ const products = [
       "public/up-and-down/1.jpg",
       "public/up-and-down/2.jpg",
       "public/up-and-down/3.jpg",
-      "public/up-and-down/4.jpg", 
+      "public/up-and-down/4.jpg",
       "public/up-and-down/5.jpg",
       "public/up-and-down/6.jpg",
       "public/up-and-down/7.jpg",
@@ -243,7 +243,8 @@ const products = [
     },
     fit: "Relaxed Fit",
   },
-{    id: 11,
+  {
+    id: 11,
     name: "Slim Fit Chinos",
     price: 75,
     category: "chinos",
@@ -265,13 +266,14 @@ const products = [
     },
     fit: "Slim Fit",
   },
-  {    id: 12,
+  {
+    id: 12,
     name: "Boxers",
     price: 68,
     category: "underwear",
     sizes: ["S", "M", "L", "XL", "XXL"],
     colors: ["Black", "White", "Grey"],
-     images: [
+    images: [
       "public/boxers/1.jpg",
       "public/boxers/2.jpg",
       "public/boxers/3.jpg",
@@ -289,7 +291,8 @@ const products = [
     fit: "Comfort Fit",
   },
 
-  {    id: 13,
+  {
+    id: 13,
     name: "Cap",
     price: 80,
     category: "more",
@@ -311,6 +314,32 @@ const products = [
       care: "Machine wash cold, tumble dry low.",
     },
     fit: "Regular Fit",
+  },
+
+  {
+    id: 14,
+    name: "Up and Down long",
+    price: 55,
+    category: "wears",
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    colors: ["Black", "Grey", "Navy"],
+    images: [
+      "public/up-and-down-long/1.jpg",
+      "public/up-and-down-long/2.jpg",
+      "public/up-and-down-long/3.jpg",
+      "public/up-and-down-long/4.jpg",
+      "public/up-and-down-long/5.jpg",
+      "public/up-and-down-long/6.jpg",
+      "public/up-and-down-long/7.jpg",
+      "public/up-and-down-long/8.jpg",
+
+    ],
+    video: "public/up-and-down-long/vid.mp4",
+    details: {
+      fabric: "66% Cotton, 34% Polyester",
+      care: "Machine wash cold, do not iron.",
+    },
+    fit: "Slim Fit",
   },
 ];
 
@@ -337,14 +366,14 @@ function renderProducts(filter = 'all') {
 }
 
 function updateWhatsAppLink(productId) {
-    const product = products.find(p => p.id == productId);
-    const options = selectedOptions[productId] || {};
-    const size = options.size || 'Not selected';
-    const color = options.color || 'Not selected';
-    const pageUrl = window.location.href;
-    const message = `Hello! I'm interested in the ${product.name} for $${product.price} in size ${size} and color ${color}. Please let me know if it's available. Thank you!`;
-    const whatsappUrl = `https://wa.me/+2347046625465?text=${encodeURIComponent(message)}`;
-    document.getElementById('modalWhatsAppBtn').href = whatsappUrl;
+  const product = products.find(p => p.id == productId);
+  const options = selectedOptions[productId] || {};
+  const size = options.size || 'Not selected';
+  const color = options.color || 'Not selected';
+  const pageUrl = window.location.href;
+  const message = `Hello! I'm interested in the ${product.name} for $${product.price} in size ${size} and color ${color}. Please let me know if it's available. Thank you!`;
+  const whatsappUrl = `https://wa.me/+2347046625465?text=${encodeURIComponent(message)}`;
+  document.getElementById('modalWhatsAppBtn').href = whatsappUrl;
 }
 
 function openQuickViewModal(productId) {
