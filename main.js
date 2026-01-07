@@ -2,7 +2,7 @@ const products = [
   {
     id: 1,
     name: "Essential Graphic Tee",
-    price: 45,
+    price: 60000,
     category: "tees",
     sizes: ["S", "M", "L", "XL", "XXL"],
     colors: ["Black", "White", "Grey"],
@@ -29,7 +29,7 @@ const products = [
   {
     id: 2,
     name: "Premium Hoodie",
-    price: 89,
+    price: 100000,
     category: "hoodies",
     sizes: ["S", "M", "L", "XL", "XXL"],
     colors: ["Black", "Grey", "Olive"],
@@ -55,7 +55,7 @@ const products = [
   {
     id: 3,
     name: "Classic Polo Shirt",
-    price: 65,
+    price: 50000,
     category: "polo",
     sizes: ["S", "M", "L", "XL", "XXL"],
     colors: ["Black", "White", "Navy", "Red"],
@@ -80,7 +80,7 @@ const products = [
   {
     id: 4,
     name: "Premium Denim Jeans",
-    price: 85,
+    price: 100000,
     category: "jeans",
     sizes: ["28", "30", "32", "34", "36", "38"],
     colors: ["Dark Blue", "Light Blue", "Black"],
@@ -104,7 +104,7 @@ const products = [
   {
     id: 5,
     name: "Utility Cargo Pants",
-    price: 79,
+    price: 90000,
     category: "cargo",
     sizes: ["S", "M", "L", "XL", "XXL"],
     colors: ["Khaki", "Black", "Olive"],
@@ -128,7 +128,7 @@ const products = [
   {
     id: 6,
     name: "Premium Singlet Tank",
-    price: 35,
+    price: 50000,
     category: "singlets",
     sizes: ["S", "M", "L", "XL", "XXL"],
     colors: ["Black", "White", "Grey"],
@@ -150,7 +150,7 @@ const products = [
   {
     id: 7,
     name: "Corporate Shirt",
-    price: 95,
+    price: 50000,
     category: "english",
     sizes: ["S", "M", "L", "XL", "XXL"],
     colors: ["White", "Light Blue", "Pink"],
@@ -173,7 +173,7 @@ const products = [
   {
     id: 8,
     name: "Jersey T-Shirt",
-    price: 52,
+    price: 50000,
     category: "tees",
     sizes: ["S", "M", "L", "XL"],
     colors: ["Black", "Cream", "Brown"],
@@ -197,7 +197,7 @@ const products = [
   {
     id: 9,
     name: "Up and Down Short",
-    price: 99,
+    price: 80000,
     category: "wears",
     sizes: ["S", "M", "L", "XL", "XXL"],
     colors: ["Black", "Grey", "Navy"],
@@ -205,7 +205,6 @@ const products = [
       "public/up-and-down/1.jpg",
       "public/up-and-down/2.jpg",
       "public/up-and-down/3.jpg",
-      "public/up-and-down/4.jpg",
       "public/up-and-down/5.jpg",
       "public/up-and-down/6.jpg",
       "public/up-and-down/7.jpg",
@@ -222,7 +221,7 @@ const products = [
   {
     id: 10,
     name: "Multi-Pocket Cargo Shorts",
-    price: 62,
+    price: 70000,
     category: "cargo",
     sizes: ["S", "M", "L", "XL"],
     colors: ["Khaki", "White", "Black"],
@@ -246,7 +245,7 @@ const products = [
   {
     id: 11,
     name: "Slim Fit Chinos",
-    price: 75,
+    price: 100000,
     category: "chinos",
     sizes: ["28", "30", "32", "34", "36"],
     colors: ["Beige", "Navy", "Olive"],
@@ -269,7 +268,7 @@ const products = [
   {
     id: 12,
     name: "Boxers",
-    price: 68,
+    price: 15000,
     category: "underwear",
     sizes: ["S", "M", "L", "XL", "XXL"],
     colors: ["Black", "White", "Grey"],
@@ -319,7 +318,7 @@ const products = [
   {
     id: 14,
     name: "Up and Down long",
-    price: 55,
+    price: 100000,
     category: "wears",
     sizes: ["S", "M", "L", "XL", "XXL"],
     colors: ["Black", "Grey", "Navy"],
@@ -337,6 +336,32 @@ const products = [
     video: "public/up-and-down-long/vid.mp4",
     details: {
       fabric: "66% Cotton, 34% Polyester",
+      care: "Machine wash cold, do not iron.",
+    },
+    fit: "Slim Fit",
+  },
+
+  {
+    id: 15,
+    name: "Sweatshirt",
+    price: 120000,
+
+    category: "hoodies",
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    colors: ["Black", "Grey", "Olive"],
+    images: [
+      "public/sweatshirt/1.jpg",
+      "public/sweatshirt/2.jpg",
+      "public/sweatshirt/3.jpg",
+      "public/sweatshirt/4.jpg",
+      "public/sweatshirt/5.jpg",
+      "public/sweatshirt/6.jpg",
+      "public/sweatshirt/7.jpg",
+      "public/sweatshirt/8.jpg",
+    ],
+    video: "public/sweatshirt/vid.mp4",
+    details: {
+      fabric: "100% Cotton",
       care: "Machine wash cold, do not iron.",
     },
     fit: "Slim Fit",
@@ -390,7 +415,7 @@ function openQuickViewModal(productId) {
   mainImage.src = product.images[0];
   mainImage.alt = product.name;
   document.getElementById('modalName').textContent = product.name;
-  document.getElementById('modalPrice').textContent = `$${product.price}`;
+  document.getElementById('modalPrice').textContent = `₦${product.price}`;
   document.getElementById('modalFit').textContent = product.fit;
 
   thumbnailsContainer.innerHTML = product.images.map((img, index) => `
