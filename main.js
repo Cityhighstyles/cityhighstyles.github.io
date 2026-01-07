@@ -313,6 +313,17 @@ function renderProducts(filter = 'all') {
   setupProductInteractions();
 }
 
+function updateWhatsAppLink(productId) {
+    const product = products.find(p => p.id == productId);
+    const options = selectedOptions[productId] || {};
+    const size = options.size || 'Not selected';
+    const color = options.color || 'Not selected';
+    const pageUrl = window.location.href;
+    const message = `Hello! I'm interested in the ${product.name} for $${product.price} in size ${size} and color ${color}. Please let me know if it's available. Thank you!`;
+    const whatsappUrl = `https://wa.me/2347046625465?text=${encodeURIComponent(message)}`;
+    document.getElementById('modalWhatsAppBtn').href = whatsappUrl;
+}
+
 function openQuickViewModal(productId) {
   const product = products.find(p => p.id == productId);
   if (!product) return;
@@ -373,10 +384,10 @@ function openQuickViewModal(productId) {
 
   const whatsappBtn = document.getElementById('modalWhatsAppBtn');
   whatsappBtn.dataset.productId = productId;
-  whatsappBtn.href = "#";
 
   modal.style.display = 'flex';
   setupModalInteractions(productId);
+  updateWhatsAppLink(productId);
 }
 
 function closeQuickViewModal() {
@@ -397,6 +408,7 @@ function setupModalInteractions(productId) {
 
       if (!selectedOptions[productId]) selectedOptions[productId] = {};
       selectedOptions[productId].size = this.dataset.size;
+      updateWhatsAppLink(productId);
     });
   });
 
@@ -408,6 +420,7 @@ function setupModalInteractions(productId) {
 
       if (!selectedOptions[productId]) selectedOptions[productId] = {};
       selectedOptions[productId].color = this.dataset.color;
+      updateWhatsAppLink(productId);
     });
   });
 
