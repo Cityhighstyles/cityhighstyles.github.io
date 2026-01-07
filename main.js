@@ -465,7 +465,7 @@ function startImageTransitions() {
           productImage.src = product.images[randomIndex];
           productImage.style.opacity = 1;
         }, 500);
-      }, 3000);
+      }, 5000);
     }
   });
 }
