@@ -434,7 +434,7 @@ function setupModalInteractions(productId) {
 
     const message = `Hi! I'm interested in:\n\nProduct: ${product.name}\nPrice: $${product.price}\nSize: ${size}\nColor: ${color}\n\nFrom: ${pageUrl}`;
 
-    const whatsappUrl = `https://wa.me/1234567890?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/+234706625465?text=${encodeURIComponent(message)}`;
     this.href = whatsappUrl;
   };
 }
