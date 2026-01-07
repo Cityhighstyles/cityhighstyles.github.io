@@ -19,7 +19,7 @@ const products = [
       "https://img.abercrombie.com/is/image/anf/KIC_123-5264-00589-303_prod1?policy=product-medium",
 
     ],
-    video: "graphic_tee.mp4",
+    video: "public/graphic-tee.mp4",
     details: {
       fabric: "100% Premium Cotton",
       care: "Machine wash cold, tumble dry low.",
@@ -34,10 +34,18 @@ const products = [
     sizes: ["S", "M", "L", "XL", "XXL"],
     colors: ["Black", "Grey", "Olive"],
     images: [
-      "https://images.pexels.com/photos/8148586/pexels-photo-8148586.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "https://images.pexels.com/photos/8148587/pexels-photo-8148587.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "public/hoodies/1.jpg",
+      "public/hoodies/2.jpg",
+      "public/hoodies/3.jpg",
+      "public/hoodies/4.jpg",
+      "public/hoodies/5.jpg",
+      "public/hoodies/6.jpg",
+      "public/hoodies/7.jpg",
+      "public/hoodies/8.jpg",
+      "public/hoodies/9.jpg",
+
     ],
-    video: "https://videos.pexels.com/video-files/8148586/8148586-hd.mp4",
+    video: "public/hoodies/vid.mp4",
     details: {
       fabric: "80% Cotton, 20% Polyester",
       care: "Machine wash warm, do not bleach.",
@@ -52,9 +60,17 @@ const products = [
     sizes: ["S", "M", "L", "XL", "XXL"],
     colors: ["Black", "White", "Navy", "Red"],
     images: [
-      "https://images.pexels.com/photos/3622613/pexels-photo-3622613.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "public/polo/1.jpg",
+      "public/polo/2.jpg",
+      "public/polo/3.jpg",
+      "public/polo/4.jpg",
+      "public/polo/5.jpg",
+      "public/polo/6.jpg",
+      "public/polo/7.jpg",
+      "public/polo/8.jpg",
+
     ],
-    video: null,
+    video: "public/polo/vid.mp4",
     details: {
       fabric: "100% Pique Cotton",
       care: "Machine wash cold, hang dry.",
@@ -69,9 +85,16 @@ const products = [
     sizes: ["28", "30", "32", "34", "36", "38"],
     colors: ["Dark Blue", "Light Blue", "Black"],
     images: [
-      "https://images.pexels.com/photos/5702424/pexels-photo-5702424.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "public/jeans/1.jpg",
+      "public/jeans/2.jpg",
+      "public/jeans/3.jpg",
+      "public/jeans/4.jpg",
+      "public/jeans/5.jpg",
+      "public/jeans/6.jpg",
+      "public/jeans/7.jpg",
+      "public/jeans/8.jpg",
     ],
-    video: null,
+    video: "public/jeans/vid.mp4",
     details: {
       fabric: "98% Cotton, 2% Elastane",
       care: "Wash inside out, with like colors.",
@@ -86,9 +109,16 @@ const products = [
     sizes: ["S", "M", "L", "XL", "XXL"],
     colors: ["Khaki", "Black", "Olive"],
     images: [
-      "https://images.pexels.com/photos/5698851/pexels-photo-5698851.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "public/cargo-pants/1.jpg",
+      "public/cargo-pants/2.jpg",
+      "public/cargo-pants/3.jpg",
+      "public/cargo-pants/4.jpg",
+      "public/cargo-pants/5.jpg",
+      "public/cargo-pants/6.jpg",
+      "public/cargo-pants/7.jpg",
+      "public/cargo-pants/8.jpg",
     ],
-    video: null,
+    video: "public/cargo-pants/vid.mp4",
     details: {
       fabric: "100% Ripstop Cotton",
       care: "Machine wash cold, gentle cycle.",
@@ -103,9 +133,14 @@ const products = [
     sizes: ["S", "M", "L", "XL", "XXL"],
     colors: ["Black", "White", "Grey"],
     images: [
-      "https://images.pexels.com/photos/3622613/pexels-photo-3622613.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "public/singlet/1.jpg",
+    "public/singlet/2.jpg",
+    "public/singlet/3.jpg",
+    "public/singlet/4.jpg",
+    "public/singlet/5.jpg",
+    "public/singlet/6.jpg",
     ],
-    video: null,
+    video: "public/singlet/vid.mp4",
     details: {
       fabric: "100% Combed Cotton",
       care: "Machine wash cold, lay flat to dry.",
@@ -114,15 +149,21 @@ const products = [
   },
   {
     id: 7,
-    name: "Traditional English Shirt",
+    name: "Corporate Shirt",
     price: 95,
     category: "english",
     sizes: ["S", "M", "L", "XL", "XXL"],
     colors: ["White", "Light Blue", "Pink"],
     images: [
-      "https://images.pexels.com/photos/3622613/pexels-photo-3622613.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "public/english/1.jpg",
+      "public/english/2.jpg",
+      "public/english/3.jpg",
+      "public/english/4.jpg",
+      "public/english/5.jpg",
+      "public/english/6.jpg",
+      "public/english/7.jpg",
     ],
-    video: null,
+    video: "public/english/vid.mp4",
     details: {
       fabric: "100% Oxford Cotton",
       care: "Dry clean recommended.",
@@ -131,15 +172,22 @@ const products = [
   },
   {
     id: 8,
-    name: "Vintage Graphic Tee",
+    name: "Jersey T-Shirt",
     price: 52,
     category: "tees",
     sizes: ["S", "M", "L", "XL"],
     colors: ["Black", "Cream", "Brown"],
     images: [
-      "https://images.pexels.com/photos/8532616/pexels-photo-8532616.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "public/jersey/1.jpg",
+      "public/jersey/2.jpg",
+      "public/jersey/3.jpg",
+      "public/jersey/4.jpg",
+      "public/jersey/5.jpg",
+      "public/jersey/6.jpg",
+      "public/jersey/7.jpg",
+      "public/jersey/8.jpg",
     ],
-    video: null,
+    video: "public/jersey/vid.mp4",
     details: {
       fabric: "100% Washed Cotton",
       care: "Machine wash cold, inside out.",
@@ -148,15 +196,23 @@ const products = [
   },
   {
     id: 9,
-    name: "Tech Fleece Hoodie",
+    name: "Up and Down wears",
     price: 99,
-    category: "hoodies",
+    category: "wears",
     sizes: ["S", "M", "L", "XL", "XXL"],
     colors: ["Black", "Grey", "Navy"],
     images: [
-      "https://images.pexels.com/photos/8148586/pexels-photo-8148586.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "public/up-and-down/1.jpg",
+      "public/up-and-down/2.jpg",
+      "public/up-and-down/3.jpg",
+      "public/up-and-down/4.jpg", 
+      "public/up-and-down/5.jpg",
+      "public/up-and-down/6.jpg",
+      "public/up-and-down/7.jpg",
+      "public/up-and-down/8.jpg",
+      "public/up-and-down/9.jpg",
     ],
-    video: null,
+    video: "public/up-and-down/vid.mp4",
     details: {
       fabric: "66% Cotton, 34% Polyester",
       care: "Machine wash cold, do not iron.",
@@ -165,122 +221,73 @@ const products = [
   },
   {
     id: 10,
-    name: "Designer Polo",
-    price: 125,
-    category: "polo",
-    sizes: ["M", "L", "XL"],
-    colors: ["Black", "Navy", "White"],
-    images: [
-      "https://images.pexels.com/photos/3622613/pexels-photo-3622613.jpeg?auto=compress&cs=tinysrgb&w=800",
-    ],
-    video: null,
-    details: {
-      fabric: "100% Mercerized Cotton",
-      care: "Hand wash or dry clean.",
-    },
-    fit: "Regular Fit",
-  },
-  {
-    id: 11,
-    name: "Skinny Fit Jeans",
-    price: 75,
-    category: "jeans",
-    sizes: ["28", "30", "32", "34", "36"],
-    colors: ["Black", "Dark Blue", "Grey"],
-    images: [
-      "https://images.pexels.com/photos/5702424/pexels-photo-5702424.jpeg?auto=compress&cs=tinysrgb&w=800",
-    ],
-    video: null,
-    details: {
-      fabric: "99% Cotton, 1% Spandex",
-      care: "Wash as little as possible.",
-    },
-    fit: "Skinny Fit",
-  },
-  {
-    id: 12,
     name: "Multi-Pocket Cargo Shorts",
     price: 62,
     category: "cargo",
     sizes: ["S", "M", "L", "XL"],
-    colors: ["Khaki", "Black"],
+    colors: ["Khaki", "White", "Black"],
     images: [
-      "https://images.pexels.com/photos/5698851/pexels-photo-5698851.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "public/cargo-shorts/1.jpg",
+      "public/cargo-shorts/2.jpg",
+      "public/cargo-shorts/3.jpg",
+      "public/cargo-shorts/4.jpg",
+      "public/cargo-shorts/5.jpg",
+      "public/cargo-shorts/6.jpg",
+      "public/cargo-shorts/7.jpg",
+      "public/cargo-shorts/8.jpg",
     ],
-    video: null,
+    video: "public/cargo-shorts/vid.mp4",
     details: {
       fabric: "100% Cotton Twill",
       care: "Machine wash warm, tumble dry.",
     },
     fit: "Relaxed Fit",
   },
-  {
-    id: 13,
-    name: "Athletic Singlet",
-    price: 40,
-    category: "singlets",
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    colors: ["White", "Black", "Navy"],
+{    id: 11,
+    name: "Slim Fit Chinos",
+    price: 75,
+    category: "chinos",
+    sizes: ["28", "30", "32", "34", "36"],
+    colors: ["Beige", "Navy", "Olive"],
     images: [
-      "https://images.pexels.com/photos/3622613/pexels-photo-3622613.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "public/chinos/1.jpg",
+      "public/chinos/2.jpg",
+      "public/chinos/3.jpg",
+      "public/chinos/4.jpg",
+      "public/chinos/5.jpg",
+      "public/chinos/6.jpg",
+      "public/chinos/7.jpg",
+      "public/chinos/8.jpg",
     ],
-    video: null,
+    video: "public/chinos/vid.mp4",
     details: {
-      fabric: "90% Polyester, 10% Spandex",
-      care: "Machine wash cold, do not use fabric softener.",
+      fabric: "100% Cotton Twill",
+      care: "Machine wash warm, tumble dry.",
     },
     fit: "Slim Fit",
   },
-  {
-    id: 14,
-    name: "Oxford Button-Down",
-    price: 88,
-    category: "english",
+  {    id: 12,
+    name: "Boxers",
+    price: 68,
+    category: "underwear",
     sizes: ["S", "M", "L", "XL", "XXL"],
-    colors: ["White", "Blue", "Cream"],
-    images: [
-      "https://images.pexels.com/photos/3622613/pexels-photo-3622613.jpeg?auto=compress&cs=tinysrgb&w=800",
+    colors: ["Black", "White", "Grey"],
+     images: [
+      "public/boxers/1.jpg",
+      "public/boxers/2.jpg",
+      "public/boxers/3.jpg",
+      "public/boxers/4.jpg",
+      "public/boxers/5.jpg",
+      "public/boxers/6.jpg",
+      "public/boxers/7.jpg",
+      "public/boxers/8.jpg",
     ],
-    video: null,
+    video: "public/boxers/vid.mp4",
     details: {
-      fabric: "100% Oxford Cotton",
-      care: "Iron on low heat.",
+      fabric: "95% Cotton, 5% Spandex",
+      care: "Machine wash cold, tumble dry low.",
     },
-    fit: "Regular Fit",
-  },
-  {
-    id: 15,
-    name: "Premium Leather Belt",
-    price: 55,
-    category: "more",
-    sizes: ["One Size"],
-    colors: ["Black", "Brown", "Tan"],
-    images: [
-      "https://images.pexels.com/photos/4389727/pexels-photo-4389727.jpeg?auto=compress&cs=tinysrgb&w=800",
-    ],
-    video: null,
-    details: {
-      fabric: "100% Genuine Leather",
-      care: "Wipe clean with a damp cloth.",
-    },
-    fit: "One Size Fits All",
-  },
-  {
-    id: 16,
-    name: "Wool Knit Sweater",
-    price: 110,
-    category: "more",
-    sizes: ["S", "M", "L", "XL"],
-    colors: ["Navy", "Grey", "Cream"],
-    images: [
-      "https://images.pexels.com/photos/1690293/pexels-photo-1690293.jpeg?auto=compress&cs=tinysrgb&w=800",
-    ],
-    video: null,
-    details: {
-      fabric: "100% Merino Wool",
-      care: "Hand wash cold, lay flat to dry.",
-    },
-    fit: "Regular Fit",
+    fit: "Comfort Fit",
   },
 ];
 
@@ -299,9 +306,6 @@ function renderProducts(filter = 'all') {
       <div class="product-info">
         <h3 class="product-name">${product.name}</h3>
         <p class="product-price">$${product.price}</p>
-        <button class="btn-whatsapp-product quick-view-btn" data-product-id="${product.id}">
-          Quick View
-        </button>
       </div>
     </div>
   `).join('');
@@ -355,7 +359,7 @@ function openQuickViewModal(productId) {
   `;
 
   document.querySelectorAll('.modal-thumbnail').forEach(thumb => {
-    thumb.addEventListener('click', function() {
+    thumb.addEventListener('click', function () {
       if (this.dataset.type === 'video') {
         videoContainer.style.display = 'block';
         mainImage.style.display = 'none';
@@ -397,7 +401,7 @@ function setupModalInteractions(productId) {
   const modal = document.getElementById('quickViewModal');
 
   document.querySelectorAll('#modalSizes .size-option').forEach(btn => {
-    btn.addEventListener('click', function() {
+    btn.addEventListener('click', function () {
       const container = this.parentElement;
       container.querySelectorAll('.size-option').forEach(b => b.classList.remove('selected'));
       this.classList.add('selected');
@@ -409,7 +413,7 @@ function setupModalInteractions(productId) {
   });
 
   document.querySelectorAll('#modalColors .color-option').forEach(btn => {
-    btn.addEventListener('click', function() {
+    btn.addEventListener('click', function () {
       const container = this.parentElement;
       container.querySelectorAll('.color-option').forEach(b => b.classList.remove('selected'));
       this.classList.add('selected');
@@ -419,13 +423,27 @@ function setupModalInteractions(productId) {
       updateWhatsAppLink(productId);
     });
   });
+
+  document.getElementById('modalWhatsAppBtn').onclick = function () {
+    const product = products.find(p => p.id == productId);
+    const options = selectedOptions[productId] || {};
+
+    const size = options.size || 'Not selected';
+    const color = options.color || 'Not selected';
+
+    const pageUrl = window.location.href;
+
+    const message = `Hi! I'm interested in:\n\nProduct: ${product.name}\nPrice: $${product.price}\nSize: ${size}\nColor: ${color}\n\nFrom: ${pageUrl}`;
+
+    const whatsappUrl = `https://wa.me/1234567890?text=${encodeURIComponent(message)}`;
+    this.href = whatsappUrl;
+  };
 }
 
 function setupProductInteractions() {
-  document.querySelectorAll('.quick-view-btn').forEach(btn => {
-    btn.addEventListener('click', function(e) {
-      e.preventDefault();
-      const productId = parseInt(this.dataset.productId);
+  document.querySelectorAll('.product-card').forEach(card => {
+    card.addEventListener('click', function () {
+      const productId = parseInt(this.dataset.id);
       openQuickViewModal(productId);
     });
   });
@@ -433,7 +451,7 @@ function setupProductInteractions() {
 
 function setupFilters() {
   document.querySelectorAll('.filter-btn').forEach(btn => {
-    btn.addEventListener('click', function() {
+    btn.addEventListener('click', function () {
       document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
       this.classList.add('active');
 
@@ -444,29 +462,51 @@ function setupFilters() {
   });
 }
 
+function startImageTransitions() {
+  const productCards = document.querySelectorAll('.product-card');
+
+  productCards.forEach(card => {
+    const productId = parseInt(card.dataset.id);
+    const product = products.find(p => p.id === productId);
+    const productImage = card.querySelector('.product-image');
+
+    if (product && product.images.length > 1) {
+      setInterval(() => {
+        const randomIndex = Math.floor(Math.random() * product.images.length);
+        productImage.style.opacity = 0;
+        setTimeout(() => {
+          productImage.src = product.images[randomIndex];
+          productImage.style.opacity = 1;
+        }, 500);
+      }, 3000);
+    }
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   renderProducts();
   setupFilters();
+  startImageTransitions();
 
   const modal = document.getElementById('quickViewModal');
   const closeBtn = document.querySelector('.modal-close');
 
   closeBtn.addEventListener('click', closeQuickViewModal);
 
-  modal.addEventListener('click', function(e) {
+  modal.addEventListener('click', function (e) {
     if (e.target === modal) {
       closeQuickViewModal();
     }
   });
 
-  document.addEventListener('keydown', function(e) {
+  document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && modal.style.display === 'flex') {
       closeQuickViewModal();
     }
   });
 
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
       const href = this.getAttribute('href');
       if (href !== '#') {
         e.preventDefault();
