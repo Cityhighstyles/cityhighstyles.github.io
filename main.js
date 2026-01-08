@@ -325,7 +325,6 @@ const products = [
       "public/up-and-down-long/1.jpg",
       "public/up-and-down-long/2.jpg",
       "public/up-and-down-long/3.jpg",
-      "public/up-and-down-long/4.jpg",
       "public/up-and-down-long/5.jpg",
       "public/up-and-down-long/6.jpg",
       "public/up-and-down-long/7.jpg",
@@ -414,6 +413,11 @@ const categoryMeta = {
   }
 };
 
+// format prices to naira
+
+function formatPrice(amount) {
+  return "₦" + amount.toLocaleString("en-NG");
+}
 
 let currentFilter = 'all';
 const selectedOptions = {};
@@ -448,8 +452,7 @@ function renderProducts(filter = 'all') {
               <img src="${product.images[0]}" alt="${product.name}" class="product-image" loading="lazy">
               <div class="product-info">
                 <h3 class="product-name">${product.name}</h3>
-                <p class="product-price">₦${product.price}</p>
-              </div>
+                <p class="product-price">${formatPrice(product.price)}</p> </div>
             </div>
           `).join("")}
         </div>
@@ -466,8 +469,8 @@ function updateWhatsAppLink(productId) {
   const options = selectedOptions[productId] || {};
   const size = options.size || 'Not selected';
   const color = options.color || 'Not selected';
-  const pageUrl = window.location.href;
-  const message = `Hello! I'm interested in the ${product.name} for $${product.price} in size ${size} and color ${color}. Please let me know if it's available. Thank you!`;
+  const message = `Hello! I'm interested in the ${product.name}. %0D%0A Size: ${size}  %0D%0A Color: ${color} %0A%0A Please let me know if it's available. Thank you!`;
+
   const whatsappUrl = `https://wa.me/+2347046625465?text=${encodeURIComponent(message)}`;
   document.getElementById('modalWhatsAppBtn').href = whatsappUrl;
 }
@@ -486,7 +489,7 @@ function openQuickViewModal(productId) {
   mainImage.src = product.images[0];
   mainImage.alt = product.name;
   document.getElementById('modalName').textContent = product.name;
-  document.getElementById('modalPrice').textContent = `₦${product.price}`;
+  document.getElementById('modalPrice').textContent = `${formatPrice(product.price)}`;
   document.getElementById('modalFit').textContent = product.fit;
 
   thumbnailsContainer.innerHTML = product.images.map((img, index) => `
@@ -580,9 +583,7 @@ function setupModalInteractions(productId) {
     const color = options.color || 'Not selected';
 
     const pageUrl = window.location.href;
-
-    const message = `Hi! I'm interested in:\n\nProduct: ${product.name}\nPrice: $${product.price}\nSize: ${size}\nColor: ${color}\n\nFrom: ${pageUrl}`;
-
+    const message = `Hello! I'm interested in the ${product.name} for ${formatPrice(product.price)} in size ${size} and color ${color}. Please let me know if it's available. Thank you!`;
     const whatsappUrl = `https://wa.me/+2347046625465?text=${encodeURIComponent(message)}`;
     this.href = whatsappUrl;
   };
