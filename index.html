@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
     content="Style Elevated. Confidence Delivered. Explore our curated collection of premium menswear.">
   <meta property="og:title" content="CityHighStyless - Premium Menswear">
@@ -22,16 +23,28 @@
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="container">
-      <div class="nav-brand">CityHighStyless</div>
-      <div class="nav-links">
-        <a href="#shop">Shop</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </div>
+ <nav class="navbar">
+  <div class="container">
+    <div class="nav-brand">
+      <img src="og-image.png" alt="CityHighStyless Logo" class="logo">
+      CityHighStyless
     </div>
-  </nav>
+
+    <!-- Hamburger for mobile -->
+    <div class="nav-toggle" id="navToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
 
   <section class="hero">
     <div class="container">
@@ -90,7 +103,8 @@
         Chat on WhatsApp
       </a>
       <br>
-      <a href="https://www.instagram.com/diamonnk?igsh=MTV3ZGR3dnJtNmhyNw==" class="btn-instagram-product" target="_blank">
+      <a href="https://www.instagram.com/diamonnk?igsh=MTV3ZGR3dnJtNmhyNw==" class="btn-instagram-product"
+        target="_blank">
         <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
           <path
             d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zm4.25 3a5.75 5.75 0 110 11.5 5.75 5.75 0 010-11.5zm0 1.5a4.25 4.25 0 100 8.5 4.25 4.25 0 000-8.5zm5-1.125a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0z" />

@@ -28,51 +28,150 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 var(--spacing-sm);
-}
-
-.navbar {
-  position: sticky;
-  top: 0;
-  background-color: rgba(10, 10, 10, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border);
-  padding: var(--spacing-sm) 0;
-  z-index: 100;
-}
-
+/* Existing styles remain the same */
 .navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* Navbar brand */
+
+/* Adjust nav-brand to align logo and text nicely */
 .nav-brand {
+  display: flex;
+  align-items: center;
   font-size: 24px;
   font-weight: 800;
   letter-spacing: 2px;
-}
-
-.nav-links {
-  display: flex;
-  gap: var(--spacing-md);
-}
-
-.nav-links a {
-  color: var(--text-secondary);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  color: var(--text-primary);
+  cursor: pointer;
   transition: color 0.3s;
 }
 
-.nav-links a:hover {
+
+.nav-brand:hover {
+  color: var(--text-accent);
+  /* highlight on hover */
+}
+
+/* Nav links */
+.nav-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 5px 0;
+}
+
+/* Add underline animation on hover */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: var(--text-primary);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Active link */
+.nav-links a.active {
   color: var(--text-primary);
+}
+
+/* Mobile links adjustments */
+@media (max-width: 768px) {
+  .nav-links a {
+    font-size: 16px;
+    padding: 10px 0;
+    color: var(--text-primary);
+  }
+
+  .nav-links a:hover::after {
+    background-color: var(--text-accent);
+  }
+}
+
+/* Hamburger menu - hidden on desktop */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-secondary);
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+/* Mobile menu: stack links vertically */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    /* hide by default */
+    flex-direction: column;
+    /* stack links vertically */
+    width: 100%;
+    /* full width below navbar */
+    background-color: rgba(10, 10, 10, 0.95);
+    padding: 1rem 0;
+    gap: 1rem;
+    position: absolute;
+    /* positioned below navbar */
+    top: 60px;
+    /* adjust to navbar height */
+    left: 0;
+    /* align to left edge */
+    z-index: 999;
+  }
+
+  /* Show menu when active */
+  .nav-links.active {
+    display: flex;
+    transform: translateX(0);
+  }
+
+  .nav-links a {
+    font-size: 16px;
+    /* bigger and easier to tap */
+    padding: 10px 0;
+    color: var(--text-primary);
+  }
+
+  /* Add hover effect */
+  .nav-links a:hover::after {
+    width: 100%;
+    background-color: var(--text-accent);
+  }
+
+  /* Hamburger toggle visible */
+  .nav-toggle {
+    display: flex;
+  }
+}
+
+
+.logo {
+  height: 40px;
+  /* adjust size */
+  width: auto;
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
 .hero {
@@ -321,10 +420,12 @@ body {
   font-family: inherit;
   text-decoration: none;
 }
+
 .btn-instagram-product:hover {
   background-color: #C13584;
   transform: translateY(-2px);
 }
+
 .btn-instagram-product svg {
   width: 20px;
   height: 20px;
@@ -611,6 +712,7 @@ body {
   background-color: #0f0f0f;
   border-top: 1px solid var(--border);
   margin-top: 80px;
+  text-align: center;
 }
 
 .footer-grid {
