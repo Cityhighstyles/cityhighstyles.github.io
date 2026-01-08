@@ -367,35 +367,135 @@ const products = [
   },
 ];
 
+const categoryMeta = {
+  tees: {
+    title: "T-Shirts & Tees",
+    description: "Everyday essentials, statement graphics, and premium cotton tees."
+  },
+  hoodies: {
+    title: "Hoodies & Sweatshirts",
+    description: "Warm, comfortable, and perfect for layering."
+  },
+  polo: {
+    title: "Polo Shirts",
+    description: "Smart-casual classics for any occasion."
+  },
+  jeans: {
+    title: "Denim Jeans",
+    description: "Premium denim built for comfort and durability."
+  },
+  cargo: {
+    title: "Cargo Pants & Shorts",
+    description: "Utility wear with modern street style."
+  },
+  singlets: {
+    title: "Singlets & Tanks",
+    description: "Lightweight and breathable for hot days."
+  },
+  english: {
+    title: "Corporate / English Wears",
+    description: "Clean, sharp looks for formal and office wear."
+  },
+  wears: {
+    title: "Two Piece Sets",
+    description: "Matching sets for effortless outfits."
+  },
+  chinos: {
+    title: "Chinos",
+    description: "Smart trousers that balance comfort and style."
+  },
+  underwear: {
+    title: "Underwear",
+    description: "Comfort-first essentials for everyday use."
+  },
+  more: {
+    title: "Accessories & More",
+    description: "Caps and extra essentials to complete your look."
+  }
+};
+
+
 let currentFilter = 'all';
 const selectedOptions = {};
-
 function renderProducts(filter = 'all') {
   const grid = document.getElementById('productsGrid');
-  const filteredProducts = filter === 'all'
-    ? products
-    : products.filter(p => p.category === filter);
+  grid.innerHTML = "";
 
-  grid.innerHTML = filteredProducts.map(product => `
+  // If NOT "all", behave like before
+  if (filter !== "all") {
+    const filteredProducts = products.filter(p => p.category === filter);
+
+    grid.innerHTML = `
+      <div class="products-grid">
+        ${filteredProducts.map(renderProductCard).join("")}
+      </div>
+    `;
+
+    setupProductInteractions();
+    startImageTransitions();
+    return;
+  }
+
+  // If "all", group into sections
+  const grouped = {};
+
+  products.forEach(product => {
+    if (!grouped[product.category]) {
+      grouped[product.category] = [];
+    }
+    grouped[product.category].push(product);
+  });
+
+  // Render each category section
+  Object.keys(grouped).forEach(category => {
+    const meta = categoryMeta[category] || {
+      title: category.toUpperCase(),
+      description: ""
+    };
+
+    const sectionHTML = `
+      <div class="category-section">
+        <div class="category-header">
+          <h3 class="category-title">${meta.title}</h3>
+          <p class="category-description">${meta.description}</p>
+        </div>
+
+        <div class="products-grid">
+          ${grouped[category].map(renderProductCard).join("")}
+        </div>
+      </div>
+    `;
+
+    grid.innerHTML += sectionHTML;
+  });
+
+  setupProductInteractions();
+  startImageTransitions();
+}
+
+function formatPrice(amount) {
+  return "₦" + amount.toLocaleString("en-NG");
+}
+
+function renderProductCard(product) {
+  return `
     <div class="product-card" data-id="${product.id}">
       <img src="${product.images[0]}" alt="${product.name}" class="product-image" loading="lazy">
       <div class="product-info">
         <h3 class="product-name">${product.name}</h3>
-        <p class="product-price">$${product.price}</p>
+        <p class="product-price">${formatPrice(product.price)}</p>
       </div>
     </div>
-  `).join('');
-
-  setupProductInteractions();
+  `;
 }
+
 
 function updateWhatsAppLink(productId) {
   const product = products.find(p => p.id == productId);
   const options = selectedOptions[productId] || {};
   const size = options.size || 'Not selected';
   const color = options.color || 'Not selected';
-  const pageUrl = window.location.href;
-  const message = `Hello! I'm interested in the ${product.name} for $${product.price} in size ${size} and color ${color}. Please let me know if it's available. Thank you!`;
+  const message = `Hello! I'm interested in the ${product.name} for ${formatPrice(product.price)} in size ${size} and color ${color}. Please let me know if it's available. Thank you!`;
   const whatsappUrl = `https://wa.me/+2347046625465?text=${encodeURIComponent(message)}`;
   document.getElementById('modalWhatsAppBtn').href = whatsappUrl;
 }
@@ -414,7 +514,7 @@ function openQuickViewModal(productId) {
   mainImage.src = product.images[0];
   mainImage.alt = product.name;
   document.getElementById('modalName').textContent = product.name;
-  document.getElementById('modalPrice').textContent = `₦${product.price}`;
+  document.getElementById('modalPrice').textContent = formatPrice(product.price);
   document.getElementById('modalFit').textContent = product.fit;
 
   thumbnailsContainer.innerHTML = product.images.map((img, index) => `
@@ -509,7 +609,7 @@ function setupModalInteractions(productId) {
 
     const pageUrl = window.location.href;
 
-    const message = `Hi! I'm interested in:\n\nProduct: ${product.name}\nPrice: $${product.price}\nSize: ${size}\nColor: ${color}\n\nFrom: ${pageUrl}`;
+    const message = `Hi! I'm interested in:\n\nProduct: ${product.name}\nPrice: ${formatPrice(product.price)}\nSize: ${size}\nColor: ${color}\n\nFrom: ${pageUrl}`;
 
     const whatsappUrl = `https://wa.me/+2347046625465?text=${encodeURIComponent(message)}`;
     this.href = whatsappUrl;
