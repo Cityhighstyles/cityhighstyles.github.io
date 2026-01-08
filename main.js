@@ -469,7 +469,7 @@ function updateWhatsAppLink(productId) {
   const options = selectedOptions[productId] || {};
   const size = options.size || 'Not selected';
   const color = options.color || 'Not selected';
-  const message = `Hello! I'm interested in the ${product.name}. %0D%0A Size: ${size}  %0D%0A Color: ${color} %0A%0A Please let me know if it's available. Thank you!`;
+  const message = `Hello! I'm interested in the ${product.name}.  Size: ${size}   Color: ${color} %0A%0A Please let me know if it's available. Thank you!`;
 
   const whatsappUrl = `https://wa.me/+2347046625465?text=${encodeURIComponent(message)}`;
   document.getElementById('modalWhatsAppBtn').href = whatsappUrl;
