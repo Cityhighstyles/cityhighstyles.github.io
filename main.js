@@ -369,48 +369,48 @@ const products = [
 
 const categoryMeta = {
   tees: {
-    title: "T-Shirts & Tees",
-    description: "Everyday essentials, statement graphics, and premium cotton tees."
+    title: "Tees",
+    description: "Everyday essentials. Clean fits, bold graphics, premium cotton."
   },
   hoodies: {
-    title: "Hoodies & Sweatshirts",
-    description: "Warm, comfortable, and perfect for layering."
+    title: "Hoodies",
+    description: "Premium heavyweight hoodies built for comfort and style."
   },
   polo: {
     title: "Polo Shirts",
-    description: "Smart-casual classics for any occasion."
+    description: "Smart casual classics for every occasion."
   },
   jeans: {
     title: "Denim Jeans",
-    description: "Premium denim built for comfort and durability."
+    description: "Durable, stylish jeans with a perfect modern fit."
   },
   cargo: {
-    title: "Cargo Pants & Shorts",
-    description: "Utility wear with modern street style."
+    title: "Cargo & Utility",
+    description: "Functional fashion with utility pockets and relaxed fits."
   },
   singlets: {
-    title: "Singlets & Tanks",
-    description: "Lightweight and breathable for hot days."
+    title: "Singlets",
+    description: "Lightweight and breathable everyday basics."
   },
   english: {
-    title: "Corporate / English Wears",
-    description: "Clean, sharp looks for formal and office wear."
+    title: "Corporate & English Wears",
+    description: "Sharp, clean looks for formal and office settings."
   },
   wears: {
-    title: "Two Piece Sets",
-    description: "Matching sets for effortless outfits."
+    title: "Two-Piece Sets",
+    description: "Matching sets designed for effortless drip."
   },
   chinos: {
     title: "Chinos",
-    description: "Smart trousers that balance comfort and style."
+    description: "Smart casual trousers with a slim modern cut."
   },
   underwear: {
     title: "Underwear",
-    description: "Comfort-first essentials for everyday use."
+    description: "Comfort-first essentials for everyday wear."
   },
   more: {
-    title: "Accessories & More",
-    description: "Caps and extra essentials to complete your look."
+    title: "Accessories",
+    description: "Caps and extra essentials to complete your fit."
   }
 };
 
@@ -418,84 +418,56 @@ const categoryMeta = {
 let currentFilter = 'all';
 const selectedOptions = {};
 function renderProducts(filter = 'all') {
-  const grid = document.getElementById('productsGrid');
-  grid.innerHTML = "";
+  const container = document.getElementById('productsGrid');
 
-  // If NOT "all", behave like before
-  if (filter !== "all") {
-    const filteredProducts = products.filter(p => p.category === filter);
+  let productsToRender = filter === "all"
+    ? products
+    : products.filter(p => p.category === filter);
 
-    grid.innerHTML = `
-      <div class="products-grid">
-        ${filteredProducts.map(renderProductCard).join("")}
-      </div>
-    `;
-
-    setupProductInteractions();
-    startImageTransitions();
-    return;
-  }
-
-  // If "all", group into sections
+  // Group by category
   const grouped = {};
-
-  products.forEach(product => {
-    if (!grouped[product.category]) {
-      grouped[product.category] = [];
-    }
-    grouped[product.category].push(product);
+  productsToRender.forEach(p => {
+    if (!grouped[p.category]) grouped[p.category] = [];
+    grouped[p.category].push(p);
   });
 
-  // Render each category section
-  Object.keys(grouped).forEach(category => {
-    const meta = categoryMeta[category] || {
-      title: category.toUpperCase(),
-      description: ""
-    };
+  // Build sections
+  container.innerHTML = Object.keys(grouped).map(category => {
+    const meta = categoryMeta[category] || { title: category, description: "" };
 
-    const sectionHTML = `
-      <div class="category-section">
+    return `
+      <section class="category-section">
         <div class="category-header">
           <h3 class="category-title">${meta.title}</h3>
           <p class="category-description">${meta.description}</p>
         </div>
 
-        <div class="products-grid">
-          ${grouped[category].map(renderProductCard).join("")}
+        <div class="products-grid-inner">
+          ${grouped[category].map(product => `
+            <div class="product-card" data-id="${product.id}">
+              <img src="${product.images[0]}" alt="${product.name}" class="product-image" loading="lazy">
+              <div class="product-info">
+                <h3 class="product-name">${product.name}</h3>
+                <p class="product-price">₦${product.price}</p>
+              </div>
+            </div>
+          `).join("")}
         </div>
-      </div>
+      </section>
     `;
-
-    grid.innerHTML += sectionHTML;
-  });
+  }).join("");
 
   setupProductInteractions();
   startImageTransitions();
 }
-
-function formatPrice(amount) {
-  return "₦" + amount.toLocaleString("en-NG");
-}
-
-function renderProductCard(product) {
-  return `
-    <div class="product-card" data-id="${product.id}">
-      <img src="${product.images[0]}" alt="${product.name}" class="product-image" loading="lazy">
-      <div class="product-info">
-        <h3 class="product-name">${product.name}</h3>
-        <p class="product-price">${formatPrice(product.price)}</p>
-      </div>
-    </div>
-  `;
-}
-
 
 function updateWhatsAppLink(productId) {
   const product = products.find(p => p.id == productId);
   const options = selectedOptions[productId] || {};
   const size = options.size || 'Not selected';
   const color = options.color || 'Not selected';
-  const message = `Hello! I'm interested in the ${product.name} for ${formatPrice(product.price)} in size ${size} and color ${color}. Please let me know if it's available. Thank you!`;
+  const pageUrl = window.location.href;
+  const message = `Hello! I'm interested in the ${product.name} for $${product.price} in size ${size} and color ${color}. Please let me know if it's available. Thank you!`;
   const whatsappUrl = `https://wa.me/+2347046625465?text=${encodeURIComponent(message)}`;
   document.getElementById('modalWhatsAppBtn').href = whatsappUrl;
 }
@@ -514,7 +486,7 @@ function openQuickViewModal(productId) {
   mainImage.src = product.images[0];
   mainImage.alt = product.name;
   document.getElementById('modalName').textContent = product.name;
-  document.getElementById('modalPrice').textContent = formatPrice(product.price);
+  document.getElementById('modalPrice').textContent = `₦${product.price}`;
   document.getElementById('modalFit').textContent = product.fit;
 
   thumbnailsContainer.innerHTML = product.images.map((img, index) => `
@@ -609,7 +581,7 @@ function setupModalInteractions(productId) {
 
     const pageUrl = window.location.href;
 
-    const message = `Hi! I'm interested in:\n\nProduct: ${product.name}\nPrice: ${formatPrice(product.price)}\nSize: ${size}\nColor: ${color}\n\nFrom: ${pageUrl}`;
+    const message = `Hi! I'm interested in:\n\nProduct: ${product.name}\nPrice: $${product.price}\nSize: ${size}\nColor: ${color}\n\nFrom: ${pageUrl}`;
 
     const whatsappUrl = `https://wa.me/+2347046625465?text=${encodeURIComponent(message)}`;
     this.href = whatsappUrl;
@@ -663,13 +635,6 @@ document.addEventListener('DOMContentLoaded', () => {
   renderProducts();
   setupFilters();
   startImageTransitions();
-
-  const navToggle = document.querySelector('.nav-toggle');
-  const navLinks = document.querySelector('.nav-links');
-
-  navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
 
   const modal = document.getElementById('quickViewModal');
   const closeBtn = document.querySelector('.modal-close');
