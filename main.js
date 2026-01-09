@@ -583,7 +583,7 @@ function setupModalInteractions(productId) {
     const color = options.color || 'Not selected';
 
     const pageUrl = window.location.href;
-    const message = `Hello! I'm interested in the ${product.name} for ${formatPrice(product.price)} in size ${size} and color ${color}. Please let me know if it's available. Thank you!`;
+    const message = `Hello! I'm interested in the ${product.name} Please let me know if it's available. Thank you!`;
     const whatsappUrl = `https://wa.me/+2347046625465?text=${encodeURIComponent(message)}`;
     this.href = whatsappUrl;
   };
