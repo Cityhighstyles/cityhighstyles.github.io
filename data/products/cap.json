@@ -5,20 +5,32 @@
   "description": "Classic cotton cap to complete your fit. Adjustable and available in multiple colors.",
   "price": 80,
   "category": "more",
-  "tags": ["cap", "accessory", "cotton"],
-  "sizes": ["S", "M", "L", "XL"],
-  "colors": ["Black", "White", "Navy"],
-  "images": [
-    "https://cityhighstyles.github.io/public/products/caps/1.jpg",
-    "https://cityhighstyles.github.io/public/products/caps/2.jpg",
-    "https://cityhighstyles.github.io/public/products/caps/3.jpg",
-    "https://cityhighstyles.github.io/public/products/caps/4.jpg",
-    "https://cityhighstyles.github.io/public/products/caps/5.jpg",
-    "https://cityhighstyles.github.io/public/products/caps/6.jpg",
-    "https://cityhighstyles.github.io/public/products/caps/7.jpg",
-    "https://cityhighstyles.github.io/public/products/caps/8.jpg"
+  "tags": [
+    "cap",
+    "accessory",
+    "cotton"
   ],
-  "video": "/products/caps/vid.mp4",
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL"
+  ],
+  "colors": [
+    "Black",
+    "White",
+    "Navy"
+  ],
+  "images": [
+    "https://cityhighstyles.github.io/public/products/cap/image-1768932708827-1.jpg",
+    "https://cityhighstyles.github.io/public/products/cap/image-1768932709287-2.jpg",
+    "https://cityhighstyles.github.io/public/products/cap/image-1768932709916-3.jpg",
+    "https://cityhighstyles.github.io/public/products/cap/image-1768932710443-4.jpg",
+    "https://cityhighstyles.github.io/public/products/cap/image-1768932711026-5.jpg",
+    "https://cityhighstyles.github.io/public/products/cap/image-1768932711465-6.jpg",
+    "https://cityhighstyles.github.io/public/products/cap/image-1768932711965-7.jpg",
+    "https://cityhighstyles.github.io/public/products/cap/image-1768932712515-8.jpg"
+  ],
   "featured": false,
   "inStock": true,
   "details": {
@@ -27,5 +39,5 @@
   },
   "fit": "Regular Fit",
   "createdAt": "2026-01-17T00:00:00.000Z",
-  "updatedAt": "2026-01-20T00:00:00.000Z"
+  "updatedAt": "2026-01-20T18:11:53.135Z"
 }
