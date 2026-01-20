@@ -5,18 +5,31 @@
   "description": "Lightweight and breathable singlet tank made from combed cotton. Perfect for layering or wearing solo.",
   "price": 50000,
   "category": "singlets",
-  "tags": ["singlet", "cotton", "tank"],
-  "sizes": ["S", "M", "L", "XL", "XXL"],
-  "colors": ["Black", "White", "Grey"],
-  "images": [
-    "https://cityhighstyles.github.io/public/products/singlet/1.jpg",
-    "https://cityhighstyles.github.io/public/products/singlet/2.jpg",
-    "https://cityhighstyles.github.io/public/products/singlet/3.jpg",
-    "https://cityhighstyles.github.io/public/products/singlet/4.jpg",
-    "https://cityhighstyles.github.io/public/products/singlet/5.jpg",
-    "https://cityhighstyles.github.io/public/products/singlet/6.jpg"
+  "tags": [
+    "singlet",
+    "cotton",
+    "tank"
   ],
-  "video": "/products/singlet/vid.mp4",
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+  "colors": [
+    "Black",
+    "White",
+    "Grey"
+  ],
+  "images": [
+    "https://cityhighstyles.github.io/public/products/premium-singlet-tank/image-1768931647431-1.jpg",
+    "https://cityhighstyles.github.io/public/products/premium-singlet-tank/image-1768931648075-2.jpg",
+    "https://cityhighstyles.github.io/public/products/premium-singlet-tank/image-1768931648604-3.jpg",
+    "https://cityhighstyles.github.io/public/products/premium-singlet-tank/image-1768931649125-4.jpg",
+    "https://cityhighstyles.github.io/public/products/premium-singlet-tank/image-1768931649587-5.jpg",
+    "https://cityhighstyles.github.io/public/products/premium-singlet-tank/image-1768931650153-6.jpg"
+  ],
   "featured": false,
   "inStock": true,
   "details": {
@@ -25,5 +38,5 @@
   },
   "fit": "Regular Fit",
   "createdAt": "2026-01-17T00:00:00.000Z",
-  "updatedAt": "2026-01-20T00:00:00.000Z"
+  "updatedAt": "2026-01-20T17:54:10.743Z"
 }
