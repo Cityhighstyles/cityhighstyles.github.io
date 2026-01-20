@@ -5,20 +5,33 @@
   "description": "Premium cotton sweatshirt for warmth and style. Slim fit and available in multiple colors.",
   "price": 120000,
   "category": "hoodies",
-  "tags": ["sweatshirt", "hoodie", "cotton"],
-  "sizes": ["S", "M", "L", "XL", "XXL"],
-  "colors": ["Black", "Grey", "Olive"],
-  "images": [
-    "https://cityhighstyles.github.io/public/products/sweatshirt/1.jpg",
-    "https://cityhighstyles.github.io/public/products/sweatshirt/2.jpg",
-    "https://cityhighstyles.github.io/public/products/sweatshirt/3.jpg",
-    "https://cityhighstyles.github.io/public/products/sweatshirt/4.jpg",
-    "https://cityhighstyles.github.io/public/products/sweatshirt/5.jpg",
-    "https://cityhighstyles.github.io/public/products/sweatshirt/6.jpg",
-    "https://cityhighstyles.github.io/public/products/sweatshirt/7.jpg",
-    "https://cityhighstyles.github.io/public/products/sweatshirt/8.jpg"
+  "tags": [
+    "sweatshirt",
+    "hoodie",
+    "cotton"
   ],
-  "video": "/products/sweatshirt/vid.mp4",
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+  "colors": [
+    "Black",
+    "Grey",
+    "Olive"
+  ],
+  "images": [
+    "https://cityhighstyles.github.io/public/products/sweatshirt/image-1768931528664-1.jpg",
+    "https://cityhighstyles.github.io/public/products/sweatshirt/image-1768931529197-2.jpg",
+    "https://cityhighstyles.github.io/public/products/sweatshirt/image-1768931529783-3.jpg",
+    "https://cityhighstyles.github.io/public/products/sweatshirt/image-1768931530844-4.jpg",
+    "https://cityhighstyles.github.io/public/products/sweatshirt/image-1768931531388-5.jpg",
+    "https://cityhighstyles.github.io/public/products/sweatshirt/image-1768931532026-6.jpg",
+    "https://cityhighstyles.github.io/public/products/sweatshirt/image-1768931532562-7.jpg",
+    "https://cityhighstyles.github.io/public/products/sweatshirt/image-1768931532992-8.jpg"
+  ],
   "featured": false,
   "inStock": true,
   "details": {
@@ -27,5 +40,5 @@
   },
   "fit": "Slim Fit",
   "createdAt": "2026-01-17T00:00:00.000Z",
-  "updatedAt": "2026-01-20T00:00:00.000Z"
+  "updatedAt": "2026-01-20T17:52:13.559Z"
 }
