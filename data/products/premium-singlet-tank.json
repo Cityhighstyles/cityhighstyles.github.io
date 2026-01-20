@@ -4,7 +4,7 @@
   "name": "Premium Singlet Tank",
   "description": "Lightweight and breathable singlet tank made from combed cotton. Perfect for layering or wearing solo.",
   "price": 50000,
-  "category": "singlets",
+  "category": "accessories",
   "tags": [
     "singlet",
     "cotton",
@@ -38,5 +38,5 @@
   },
   "fit": "Regular Fit",
   "createdAt": "2026-01-17T00:00:00.000Z",
-  "updatedAt": "2026-01-20T17:54:10.743Z"
+  "updatedAt": "2026-01-20T18:37:09.889Z"
 }
