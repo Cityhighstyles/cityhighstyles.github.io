@@ -23,7 +23,7 @@
     "Olive"
   ],
   "images": [
-    "/products/utility-cargo-pants/image-1768929843672-1.jpg"
+    "https://cityhighstyles.github.io/public/products/utility-cargo-pants/image-1768931264117-1.jpg"
   ],
   "featured": false,
   "inStock": true,
@@ -33,5 +33,5 @@
   },
   "fit": "Relaxed Fit",
   "createdAt": "2026-01-17T00:00:00.000Z",
-  "updatedAt": "2026-01-20T17:24:04.452Z"
+  "updatedAt": "2026-01-20T17:47:44.680Z"
 }
