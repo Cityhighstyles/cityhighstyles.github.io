@@ -5,19 +5,32 @@
   "description": "Long two-piece set made from a cotton-polyester blend. Slim fit and versatile for different occasions.",
   "price": 100000,
   "category": "wears",
-  "tags": ["two-piece", "long", "cotton"],
-  "sizes": ["S", "M", "L", "XL", "XXL"],
-  "colors": ["Black", "Grey", "Navy"],
-  "images": [
-    "https://cityhighstyles.github.io/public/products/up-and-down-long/1.jpg",
-    "https://cityhighstyles.github.io/public/products/up-and-down-long/2.jpg",
-    "https://cityhighstyles.github.io/public/products/up-and-down-long/3.jpg",
-    "https://cityhighstyles.github.io/public/products/up-and-down-long/5.jpg",
-    "https://cityhighstyles.github.io/public/products/up-and-down-long/6.jpg",
-    "https://cityhighstyles.github.io/public/products/up-and-down-long/7.jpg",
-    "https://cityhighstyles.github.io/public/products/up-and-down-long/8.jpg"
+  "tags": [
+    "two-piece",
+    "long",
+    "cotton"
   ],
-  "video": "/products/up-and-down-long/vid.mp4",
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+  "colors": [
+    "Black",
+    "Grey",
+    "Navy"
+  ],
+  "images": [
+    "https://cityhighstyles.github.io/public/products/up-and-down-long/image-1768931482356-1.jpg",
+    "https://cityhighstyles.github.io/public/products/up-and-down-long/image-1768931482883-2.jpg",
+    "https://cityhighstyles.github.io/public/products/up-and-down-long/image-1768931483401-3.jpg",
+    "https://cityhighstyles.github.io/public/products/up-and-down-long/image-1768931483942-4.jpg",
+    "https://cityhighstyles.github.io/public/products/up-and-down-long/image-1768931484538-5.jpg",
+    "https://cityhighstyles.github.io/public/products/up-and-down-long/image-1768931485011-6.jpg",
+    "https://cityhighstyles.github.io/public/products/up-and-down-long/image-1768931485493-7.jpg"
+  ],
   "featured": false,
   "inStock": true,
   "details": {
@@ -26,5 +39,5 @@
   },
   "fit": "Slim Fit",
   "createdAt": "2026-01-17T00:00:00.000Z",
-  "updatedAt": "2026-01-20T00:00:00.000Z"
+  "updatedAt": "2026-01-20T17:51:25.946Z"
 }
