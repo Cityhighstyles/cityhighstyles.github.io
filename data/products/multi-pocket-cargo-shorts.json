@@ -5,20 +5,32 @@
   "description": "Cargo shorts with multiple pockets, made from cotton twill. Relaxed fit for comfort and utility.",
   "price": 70000,
   "category": "cargo",
-  "tags": ["cargo", "shorts", "cotton"],
-  "sizes": ["S", "M", "L", "XL"],
-  "colors": ["Khaki", "White", "Black"],
-  "images": [
-    "https://cityhighstyles.github.io/public/products/cargo-shorts/1.jpg",
-    "https://cityhighstyles.github.io/public/products/cargo-shorts/2.jpg",
-    "https://cityhighstyles.github.io/public/products/cargo-shorts/3.jpg",
-    "https://cityhighstyles.github.io/public/products/cargo-shorts/4.jpg",
-    "https://cityhighstyles.github.io/public/products/cargo-shorts/5.jpg",
-    "https://cityhighstyles.github.io/public/products/cargo-shorts/6.jpg",
-    "https://cityhighstyles.github.io/public/products/cargo-shorts/7.jpg",
-    "https://cityhighstyles.github.io/public/products/cargo-shorts/8.jpg"
+  "tags": [
+    "cargo",
+    "shorts",
+    "cotton"
   ],
-  "video": "/products/cargo-shorts/vid.mp4",
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL"
+  ],
+  "colors": [
+    "Khaki",
+    "White",
+    "Black"
+  ],
+  "images": [
+    "https://cityhighstyles.github.io/public/products/multi-pocket-cargo-shorts/image-1768932393665-1.jpg",
+    "https://cityhighstyles.github.io/public/products/multi-pocket-cargo-shorts/image-1768932394216-2.jpg",
+    "https://cityhighstyles.github.io/public/products/multi-pocket-cargo-shorts/image-1768932394717-3.jpg",
+    "https://cityhighstyles.github.io/public/products/multi-pocket-cargo-shorts/image-1768932395268-4.jpg",
+    "https://cityhighstyles.github.io/public/products/multi-pocket-cargo-shorts/image-1768932395810-5.jpg",
+    "https://cityhighstyles.github.io/public/products/multi-pocket-cargo-shorts/image-1768932396398-6.jpg",
+    "https://cityhighstyles.github.io/public/products/multi-pocket-cargo-shorts/image-1768932397083-7.jpg",
+    "https://cityhighstyles.github.io/public/products/multi-pocket-cargo-shorts/image-1768932397577-8.jpg"
+  ],
   "featured": false,
   "inStock": true,
   "details": {
@@ -27,5 +39,5 @@
   },
   "fit": "Relaxed Fit",
   "createdAt": "2026-01-17T00:00:00.000Z",
-  "updatedAt": "2026-01-20T00:00:00.000Z"
+  "updatedAt": "2026-01-20T18:06:38.111Z"
 }
