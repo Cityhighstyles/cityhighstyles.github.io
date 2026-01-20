@@ -3,7 +3,7 @@
   "slug": "cap",
   "name": "Cap",
   "description": "Classic cotton cap to complete your fit. Adjustable and available in multiple colors.",
-  "price": 80,
+  "price": 80000,
   "category": "accessories",
   "tags": [
     "cap",
@@ -39,5 +39,5 @@
   },
   "fit": "Regular Fit",
   "createdAt": "2026-01-17T00:00:00.000Z",
-  "updatedAt": "2026-01-20T18:36:00.734Z"
+  "updatedAt": "2026-01-20T22:11:15.073Z"
 }
