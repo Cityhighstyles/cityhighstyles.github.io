@@ -5,19 +5,32 @@
   "description": "Classic corporate shirt made from Oxford cotton. Sharp, clean look for formal and office settings.",
   "price": 50000,
   "category": "english",
-  "tags": ["corporate", "shirt", "oxford"],
-  "sizes": ["S", "M", "L", "XL", "XXL"],
-  "colors": ["White", "Light Blue", "Pink"],
-  "images": [
-    "https://cityhighstyles.github.io/public/products/english/1.jpg",
-    "https://cityhighstyles.github.io/public/products/english/2.jpg",
-    "https://cityhighstyles.github.io/public/products/english/3.jpg",
-    "https://cityhighstyles.github.io/public/products/english/4.jpg",
-    "https://cityhighstyles.github.io/public/products/english/5.jpg",
-    "https://cityhighstyles.github.io/public/products/english/6.jpg",
-    "https://cityhighstyles.github.io/public/products/english/7.jpg"
+  "tags": [
+    "corporate",
+    "shirt",
+    "oxford"
   ],
-  "video": "/products/english/vid.mp4",
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+  "colors": [
+    "White",
+    "Light Blue",
+    "Pink"
+  ],
+  "images": [
+    "https://cityhighstyles.github.io/public/products/corporate-shirt/image-1768932569045-1.jpg",
+    "https://cityhighstyles.github.io/public/products/corporate-shirt/image-1768932569513-2.jpg",
+    "https://cityhighstyles.github.io/public/products/corporate-shirt/image-1768932570048-3.jpg",
+    "https://cityhighstyles.github.io/public/products/corporate-shirt/image-1768932570529-4.jpg",
+    "https://cityhighstyles.github.io/public/products/corporate-shirt/image-1768932571005-5.jpg",
+    "https://cityhighstyles.github.io/public/products/corporate-shirt/image-1768932571493-6.jpg",
+    "https://cityhighstyles.github.io/public/products/corporate-shirt/image-1768932571975-7.jpg"
+  ],
   "featured": false,
   "inStock": true,
   "details": {
@@ -26,5 +39,5 @@
   },
   "fit": "Slim Fit",
   "createdAt": "2026-01-17T00:00:00.000Z",
-  "updatedAt": "2026-01-20T00:00:00.000Z"
+  "updatedAt": "2026-01-20T18:09:32.471Z"
 }
