@@ -5,20 +5,33 @@
   "description": "Comfortable boxers made from a cotton-spandex blend. Everyday essential for comfort and fit.",
   "price": 15000,
   "category": "underwear",
-  "tags": ["boxers", "underwear", "cotton"],
-  "sizes": ["S", "M", "L", "XL", "XXL"],
-  "colors": ["Black", "White", "Grey"],
-  "images": [
-    "https://cityhighstyles.github.io/public/products/boxers/1.jpg",
-    "https://cityhighstyles.github.io/public/products/boxers/2.jpg",
-    "https://cityhighstyles.github.io/public/products/boxers/3.jpg",
-    "https://cityhighstyles.github.io/public/products/boxers/4.jpg",
-    "https://cityhighstyles.github.io/public/products/boxers/5.jpg",
-    "https://cityhighstyles.github.io/public/products/boxers/6.jpg",
-    "https://cityhighstyles.github.io/public/products/boxers/7.jpg",
-    "https://cityhighstyles.github.io/public/products/boxers/8.jpg"
+  "tags": [
+    "boxers",
+    "underwear",
+    "cotton"
   ],
-  "video": "/products/boxers/vid.mp4",
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+  "colors": [
+    "Black",
+    "White",
+    "Grey"
+  ],
+  "images": [
+    "https://cityhighstyles.github.io/public/products/boxers/image-1768932783179-1.jpg",
+    "https://cityhighstyles.github.io/public/products/boxers/image-1768932783702-2.jpg",
+    "https://cityhighstyles.github.io/public/products/boxers/image-1768932784356-3.jpg",
+    "https://cityhighstyles.github.io/public/products/boxers/image-1768932784928-4.jpg",
+    "https://cityhighstyles.github.io/public/products/boxers/image-1768932785515-5.jpg",
+    "https://cityhighstyles.github.io/public/products/boxers/image-1768932786005-6.jpg",
+    "https://cityhighstyles.github.io/public/products/boxers/image-1768932786568-7.jpg",
+    "https://cityhighstyles.github.io/public/products/boxers/image-1768932787025-8.jpg"
+  ],
   "featured": false,
   "inStock": true,
   "details": {
@@ -27,5 +40,5 @@
   },
   "fit": "Comfort Fit",
   "createdAt": "2026-01-17T00:00:00.000Z",
-  "updatedAt": "2026-01-20T00:00:00.000Z"
+  "updatedAt": "2026-01-20T18:13:07.584Z"
 }
