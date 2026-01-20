@@ -23,7 +23,14 @@
     "Olive"
   ],
   "images": [
-    "https://cityhighstyles.github.io/public/products/utility-cargo-pants/image-1768931264117-1.jpg"
+    "https://cityhighstyles.github.io/public/products/utility-cargo-pants/image-1768931372587-1.jpg",
+    "https://cityhighstyles.github.io/public/products/utility-cargo-pants/image-1768931373110-2.jpg",
+    "https://cityhighstyles.github.io/public/products/utility-cargo-pants/image-1768931373663-3.jpg",
+    "https://cityhighstyles.github.io/public/products/utility-cargo-pants/image-1768931374164-4.jpg",
+    "https://cityhighstyles.github.io/public/products/utility-cargo-pants/image-1768931374667-5.jpg",
+    "https://cityhighstyles.github.io/public/products/utility-cargo-pants/image-1768931375141-6.jpg",
+    "https://cityhighstyles.github.io/public/products/utility-cargo-pants/image-1768931375762-7.jpg",
+    "https://cityhighstyles.github.io/public/products/utility-cargo-pants/image-1768931376230-8.jpg"
   ],
   "featured": false,
   "inStock": true,
@@ -33,5 +40,5 @@
   },
   "fit": "Relaxed Fit",
   "createdAt": "2026-01-17T00:00:00.000Z",
-  "updatedAt": "2026-01-20T17:47:44.680Z"
+  "updatedAt": "2026-01-20T17:49:36.799Z"
 }
