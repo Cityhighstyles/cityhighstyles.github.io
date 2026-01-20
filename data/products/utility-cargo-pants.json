@@ -5,20 +5,26 @@
   "description": "Functional cargo pants made from durable ripstop cotton. Multiple utility pockets and a relaxed fit for everyday comfort.",
   "price": 90000,
   "category": "cargo",
-  "tags": ["cargo", "utility", "cotton"],
-  "sizes": ["S", "M", "L", "XL", "XXL"],
-  "colors": ["Khaki", "Black", "Olive"],
-  "images": [
-    "https://cityhighstyles.github.io/public/products/cargo-pants/1.jpg",
-    "https://cityhighstyles.github.io/public/products/cargo-pants/2.jpg",
-    "https://cityhighstyles.github.io/public/products/cargo-pants/3.jpg",
-    "https://cityhighstyles.github.io/public/products/cargo-pants/4.jpg",
-    "https://cityhighstyles.github.io/public/products/cargo-pants/5.jpg",
-    "https://cityhighstyles.github.io/public/products/cargo-pants/6.jpg",
-    "https://cityhighstyles.github.io/public/products/cargo-pants/7.jpg",
-    "https://cityhighstyles.github.io/public/products/cargo-pants/8.jpg"
+  "tags": [
+    "cargo",
+    "utility",
+    "cotton"
   ],
-  "video": "/products/cargo-pants/vid.mp4",
+  "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL"
+  ],
+  "colors": [
+    "Khaki",
+    "Black",
+    "Olive"
+  ],
+  "images": [
+    "/products/utility-cargo-pants/image-1768929843672-1.jpg"
+  ],
   "featured": false,
   "inStock": true,
   "details": {
@@ -27,5 +33,5 @@
   },
   "fit": "Relaxed Fit",
   "createdAt": "2026-01-17T00:00:00.000Z",
-  "updatedAt": "2026-01-20T00:00:00.000Z"
+  "updatedAt": "2026-01-20T17:24:04.452Z"
 }
