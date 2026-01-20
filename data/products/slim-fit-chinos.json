@@ -4,7 +4,7 @@
   "name": "Slim Fit Chinos",
   "description": "Smart casual slim fit chinos made from cotton twill. Modern cut for a sharp look.",
   "price": 100000,
-  "category": "chinos",
+  "category": "jeans",
   "tags": [
     "chinos",
     "slim fit",
@@ -39,5 +39,5 @@
   },
   "fit": "Slim Fit",
   "createdAt": "2026-01-17T00:00:00.000Z",
-  "updatedAt": "2026-01-20T17:52:55.942Z"
+  "updatedAt": "2026-01-20T18:36:46.020Z"
 }
