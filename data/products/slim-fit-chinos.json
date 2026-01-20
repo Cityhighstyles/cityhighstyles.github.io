@@ -5,19 +5,32 @@
   "description": "Smart casual slim fit chinos made from cotton twill. Modern cut for a sharp look.",
   "price": 100000,
   "category": "chinos",
-  "tags": ["chinos", "slim fit", "cotton"],
-  "sizes": ["28", "30", "32", "34", "36"],
-  "colors": ["Beige", "Navy", "Olive"],
-  "images": [
-    "https://cityhighstyles.github.io/public/products/chinos/1.jpg",
-    "https://cityhighstyles.github.io/public/products/chinos/2.jpg",
-    "https://cityhighstyles.github.io/public/products/chinos/3.jpg",
-    "https://cityhighstyles.github.io/public/products/chinos/4.jpg",
-    "https://cityhighstyles.github.io/public/products/chinos/5.jpg",
-    "https://cityhighstyles.github.io/public/products/chinos/6.jpg",
-    "https://cityhighstyles.github.io/public/products/chinos/7.jpg"
+  "tags": [
+    "chinos",
+    "slim fit",
+    "cotton"
   ],
-  "video": "/products/chinos/vid.mp4",
+  "sizes": [
+    "28",
+    "30",
+    "32",
+    "34",
+    "36"
+  ],
+  "colors": [
+    "Beige",
+    "Navy",
+    "Olive"
+  ],
+  "images": [
+    "https://cityhighstyles.github.io/public/products/slim-fit-chinos/image-1768931572486-1.jpg",
+    "https://cityhighstyles.github.io/public/products/slim-fit-chinos/image-1768931572965-2.jpg",
+    "https://cityhighstyles.github.io/public/products/slim-fit-chinos/image-1768931573532-3.jpg",
+    "https://cityhighstyles.github.io/public/products/slim-fit-chinos/image-1768931573980-4.jpg",
+    "https://cityhighstyles.github.io/public/products/slim-fit-chinos/image-1768931574491-5.jpg",
+    "https://cityhighstyles.github.io/public/products/slim-fit-chinos/image-1768931574974-6.jpg",
+    "https://cityhighstyles.github.io/public/products/slim-fit-chinos/image-1768931575461-7.jpg"
+  ],
   "featured": false,
   "inStock": true,
   "details": {
@@ -26,5 +39,5 @@
   },
   "fit": "Slim Fit",
   "createdAt": "2026-01-17T00:00:00.000Z",
-  "updatedAt": "2026-01-20T00:00:00.000Z"
+  "updatedAt": "2026-01-20T17:52:55.942Z"
 }
