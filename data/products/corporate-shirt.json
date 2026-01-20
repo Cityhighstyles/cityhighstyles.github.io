@@ -4,7 +4,7 @@
   "name": "Corporate Shirt",
   "description": "Classic corporate shirt made from Oxford cotton. Sharp, clean look for formal and office settings.",
   "price": 50000,
-  "category": "english",
+  "category": "tees",
   "tags": [
     "corporate",
     "shirt",
@@ -39,5 +39,5 @@
   },
   "fit": "Slim Fit",
   "createdAt": "2026-01-17T00:00:00.000Z",
-  "updatedAt": "2026-01-20T18:09:32.471Z"
+  "updatedAt": "2026-01-20T18:27:37.326Z"
 }
