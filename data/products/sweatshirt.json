@@ -4,7 +4,7 @@
   "name": "Sweatshirt",
   "description": "Premium cotton sweatshirt for warmth and style. Slim fit and available in multiple colors.",
   "price": 120000,
-  "category": "hoodies",
+  "category": "hoodies-sweatshirts",
   "tags": [
     "sweatshirt",
     "hoodie",
@@ -40,5 +40,5 @@
   },
   "fit": "Slim Fit",
   "createdAt": "2026-01-17T00:00:00.000Z",
-  "updatedAt": "2026-01-20T17:52:13.559Z"
+  "updatedAt": "2026-01-21T09:27:04.164Z"
 }
