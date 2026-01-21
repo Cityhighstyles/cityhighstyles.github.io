@@ -4,7 +4,7 @@
   "name": "Up and Down long",
   "description": "Long two-piece set made from a cotton-polyester blend. Slim fit and versatile for different occasions.",
   "price": 100000,
-  "category": "wears",
+  "category": "two-piece-sets",
   "tags": [
     "two-piece",
     "long",
@@ -39,5 +39,5 @@
   },
   "fit": "Slim Fit",
   "createdAt": "2026-01-17T00:00:00.000Z",
-  "updatedAt": "2026-01-20T17:51:25.946Z"
+  "updatedAt": "2026-01-21T09:26:49.360Z"
 }
