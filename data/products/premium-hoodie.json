@@ -3,7 +3,7 @@
   "slug": "premium-hoodie",
   "name": "Premium Hoodie",
   "description": "Heavyweight hoodie designed for maximum comfort. Perfect blend of cotton and polyester for durability and warmth.",
-  "price": 100000,
+  "price": 20000,
   "category": "hoodies-sweatshirts",
   "tags": [
     "hoodie",
@@ -42,5 +42,5 @@
   },
   "fit": "Regular Fit",
   "createdAt": "2026-01-17T00:00:00.000Z",
-  "updatedAt": "2026-01-21T09:27:56.810Z"
+  "updatedAt": "2026-01-23T23:41:27.475Z"
 }
