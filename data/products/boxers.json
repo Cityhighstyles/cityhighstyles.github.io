@@ -23,15 +23,14 @@
     "Grey"
   ],
   "images": [
+    "https://cityhighstyles.github.io/public/products/boxers/image-1768932784356-3.jpg",
     "https://cityhighstyles.github.io/public/products/boxers/image-1768932783179-1.jpg",
     "https://cityhighstyles.github.io/public/products/boxers/image-1768932783702-2.jpg",
-    "https://cityhighstyles.github.io/public/products/boxers/image-1768932784356-3.jpg",
     "https://cityhighstyles.github.io/public/products/boxers/image-1768932784928-4.jpg",
     "https://cityhighstyles.github.io/public/products/boxers/image-1768932785515-5.jpg",
     "https://cityhighstyles.github.io/public/products/boxers/image-1768932786005-6.jpg",
     "https://cityhighstyles.github.io/public/products/boxers/image-1768932786568-7.jpg",
-    "https://cityhighstyles.github.io/public/products/boxers/image-1768932787025-8.jpg",
-    "https://cityhighstyles.github.io/public/products/boxers/image-1769165391221-1.jpg"
+    "https://cityhighstyles.github.io/public/products/boxers/image-1768932787025-8.jpg"
   ],
   "featured": false,
   "inStock": true,
@@ -41,5 +40,5 @@
   },
   "fit": "Comfort Fit",
   "createdAt": "2026-01-17T00:00:00.000Z",
-  "updatedAt": "2026-01-23T10:49:51.784Z"
+  "updatedAt": "2026-01-23T11:34:26.586Z"
 }
