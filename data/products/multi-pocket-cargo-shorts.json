@@ -3,7 +3,7 @@
   "slug": "multi-pocket-cargo-shorts",
   "name": "Multi-Pocket Cargo Shorts",
   "description": "Cargo shorts with multiple pockets, made from cotton twill. Relaxed fit for comfort and utility.",
-  "price": 70000,
+  "price": 7000,
   "category": "cargo",
   "tags": [
     "cargo",
@@ -39,5 +39,5 @@
   },
   "fit": "Relaxed Fit",
   "createdAt": "2026-01-17T00:00:00.000Z",
-  "updatedAt": "2026-01-21T09:27:43.775Z"
+  "updatedAt": "2026-01-23T23:40:31.995Z"
 }
