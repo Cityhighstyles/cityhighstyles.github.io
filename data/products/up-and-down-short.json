@@ -3,7 +3,7 @@
   "slug": "up-and-down-short",
   "name": "Up and Down Short",
   "description": "Two-piece short set made from a cotton-polyester blend. Slim fit and easy to style for any occasion.",
-  "price": 80000,
+  "price": 15000,
   "category": "two-piece-sets",
   "tags": [
     "two-piece",
@@ -41,5 +41,5 @@
   },
   "fit": "Slim Fit",
   "createdAt": "2026-01-17T00:00:00.000Z",
-  "updatedAt": "2026-01-21T09:26:32.719Z"
+  "updatedAt": "2026-01-23T23:43:00.611Z"
 }
