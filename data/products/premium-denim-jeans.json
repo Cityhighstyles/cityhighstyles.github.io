@@ -3,7 +3,7 @@
   "slug": "premium-denim-jeans",
   "name": "Premium Denim Jeans",
   "description": "High-quality denim jeans with a modern slim fit. Comfortable stretch fabric for all-day wear.",
-  "price": 100000,
+  "price": 20000,
   "category": "jeans-trousers",
   "tags": [
     "denim",
@@ -41,5 +41,5 @@
   },
   "fit": "Slim Fit",
   "createdAt": "2026-01-17T00:00:00.000Z",
-  "updatedAt": "2026-01-21T09:28:10.750Z"
+  "updatedAt": "2026-01-23T23:41:02.466Z"
 }
