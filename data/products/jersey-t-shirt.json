@@ -3,7 +3,7 @@
   "slug": "jersey-t-shirt",
   "name": "Jersey T-Shirt",
   "description": "Soft jersey t-shirt made from washed cotton. Comfortable and stylish for everyday wear.",
-  "price": 50000,
+  "price": 10000,
   "category": "tees-shirts",
   "tags": [
     "jersey",
@@ -39,5 +39,5 @@
   },
   "fit": "Regular Fit",
   "createdAt": "2026-01-17T00:00:00.000Z",
-  "updatedAt": "2026-01-21T09:28:33.919Z"
+  "updatedAt": "2026-01-23T23:40:16.088Z"
 }
