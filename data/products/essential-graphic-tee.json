@@ -3,7 +3,7 @@
   "slug": "essential-graphic-tee",
   "name": "Essential Graphic Tee",
   "description": "Premium cotton graphic tee with modern designs. Perfect for everyday wear with superior comfort and style.",
-  "price": 60000,
+  "price": 20000,
   "category": "tees-shirts",
   "tags": [
     "casual",
@@ -41,5 +41,5 @@
   },
   "fit": "Oversized Fit",
   "createdAt": "2026-01-17T00:00:00.000Z",
-  "updatedAt": "2026-01-21T09:29:15.152Z"
+  "updatedAt": "2026-01-23T23:39:54.079Z"
 }
