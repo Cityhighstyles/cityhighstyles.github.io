@@ -3,7 +3,7 @@
   "slug": "classic-polo-shirt",
   "name": "Classic Polo Shirt",
   "description": "Timeless polo shirt made from 100% pique cotton. Perfect for smart casual occasions.",
-  "price": 60000,
+  "price": 50000,
   "category": "tees-shirts",
   "tags": [
     "polo",
@@ -42,5 +42,5 @@
   },
   "fit": "Regular Fit",
   "createdAt": "2026-01-19T11:31:09.362Z",
-  "updatedAt": "2026-01-28T17:25:13.309Z"
+  "updatedAt": "2026-01-28T17:34:41.231Z"
 }
