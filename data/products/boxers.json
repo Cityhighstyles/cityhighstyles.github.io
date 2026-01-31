@@ -3,7 +3,7 @@
   "slug": "boxers",
   "name": "Boxers",
   "description": "Comfortable boxers made from a cotton-spandex blend. Everyday essential for comfort and fit.",
-  "price": 15000,
+  "price": 20000,
   "category": "underwear",
   "tags": [
     "boxers",
@@ -30,7 +30,8 @@
     "https://cityhighstyles.github.io/public/products/boxers/image-1768932785515-5.jpg",
     "https://cityhighstyles.github.io/public/products/boxers/image-1768932786005-6.jpg",
     "https://cityhighstyles.github.io/public/products/boxers/image-1768932786568-7.jpg",
-    "https://cityhighstyles.github.io/public/products/boxers/image-1768932787025-8.jpg"
+    "https://cityhighstyles.github.io/public/products/boxers/image-1768932787025-8.jpg",
+    "https://cityhighstyles.github.io/public/products/boxers/image-1769885989066-1.jpg"
   ],
   "featured": false,
   "inStock": true,
@@ -40,5 +41,5 @@
   },
   "fit": "Comfort Fit",
   "createdAt": "2026-01-17T00:00:00.000Z",
-  "updatedAt": "2026-01-23T11:34:26.586Z"
+  "updatedAt": "2026-01-31T18:59:49.556Z"
 }
